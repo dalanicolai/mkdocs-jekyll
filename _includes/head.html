@@ -30,3 +30,14 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png"> 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/palette.css">
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+       TeX: { equationNumbers: { autoNumber: "AMS" } }
+   });
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  {% endif %}
